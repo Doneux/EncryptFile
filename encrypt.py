@@ -1,3 +1,4 @@
+
 print("Please enter a filename.\nInput example: test.txt")
 
 while 1:
@@ -20,5 +21,5 @@ newname = filename[:perIndex] +'.dec'
 savefile = open(newname, "w")
 
 for i in file:
-    savefile.write((chr(ord(i) * 2)))
-
+    for j in i:
+        savefile.write((chr(ord(j) * 2)))
