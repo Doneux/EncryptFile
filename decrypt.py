@@ -21,5 +21,4 @@ savefile = open(newname, "w")
 
 for i in file:
     for j in i:
-        savefile.write(chr(ord(j) / 2))
-
+        savefile.write(chr(int(((ord(j)) / 2))))
