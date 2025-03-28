@@ -20,5 +20,5 @@ newname = filename[:perIndex] +'.dec'
 savefile = open(newname, "w")
 
 for i in file:
-    savefile.write(i)
+    savefile.write((chr(ord(i) * 2)))
 
